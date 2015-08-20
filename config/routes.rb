@@ -55,5 +55,9 @@ Rails.application.routes.draw do
   #   end
 
   root 'gallery#index'
+
+  #rudimentry pages
+  get '/about', :controller => 'gallery', :action => 'about'
+  get '/contact', :controller => 'gallery', :action => 'contact'
   # get'/', :controller => 'gallery', :action => 'index'
 end

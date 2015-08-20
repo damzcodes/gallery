@@ -9,4 +9,12 @@ class GalleryController < ApplicationController
 		# 	#format.json {@object = Object.order('in spesific order')}
 		# end
 	end
+
+	def about
+		render 'gallery/about'
+	end
+
+	def contact
+		render 'gallery/contact'
+	end
 end
