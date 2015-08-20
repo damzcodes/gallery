@@ -53,4 +53,11 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  root 'gallery#index'
+
+  #rudimentry pages
+  get '/about', :controller => 'gallery', :action => 'about'
+  get '/contact', :controller => 'gallery', :action => 'contact'
+  # get'/', :controller => 'gallery', :action => 'index'
 end
