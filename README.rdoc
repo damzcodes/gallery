@@ -1,0 +1,3 @@
+== README
+
+A simple app to allow me to learn and practice react and testing.
