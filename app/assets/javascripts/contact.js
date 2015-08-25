@@ -4,24 +4,29 @@ var ContactForm = React.createClass({
   },
 
   render: function() {
-  	return (
-  		// <div className="container">
-  			 <div className="row">
-          <div className="col-md-12">
-            <h1 className="text-center">Contact</h1>
+    return (
+      <div className="col-md-12">
+        <form>
+          <div className="form-group">
+            <label> Email Address </label>
+            <input type="email" className="form-control" placeholder="Email"/>
           </div>
-        </div>
-        <div className="row">
-        	<div className="col-md-12">
-        		<p className="text-center">
-        			You can contact me directly at me@damilolaodelola.com or you can fill out the contact form below.
-        		</p>
-        	</div>
-        </div>
-        </div>
-  		// </div>
-  	)
 
+          <div className="form-group">
+            <label> Message </label>
+            <textarea rows="4" className="form-control" placeholder="Type your message here..."/>
+          </div>
+          <button type="submit" className="btn btn-default"> submit </button>
+        </form>
+      </div>
+	  )
   }
 
-})
+});
+
+
+
+React.render(
+  <ContactForm />,
+  document.getElementById('contact')
+);
