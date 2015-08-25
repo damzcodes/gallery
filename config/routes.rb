@@ -58,6 +58,7 @@ Rails.application.routes.draw do
 
   #rudimentry pages
   get '/about', :controller => 'gallery', :action => 'about'
-  get '/contact', :controller => 'gallery', :action => 'contact'
+  match '/contacts', to: 'contacts#new', via: 'get'
+  resources "contacts", only: [:new, :create]
   # get'/', :controller => 'gallery', :action => 'index'
 end
